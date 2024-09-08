@@ -1,0 +1,244 @@
+body {
+  background: #0B1326;
+  color: #e6eeff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, .2);
+  border-bottom: 1px solid #3b3e5b;
+}
+@media (max-width: 767.98px) {
+  .navbar {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+}
+
+/* Padding untuk layar desktop */
+@media (min-width: 768px) {
+  .navbar {
+    padding: 1rem 2rem 1rem 2rem;
+  }
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #918aff !important;
+}
+
+.custom-toggler-icon {
+  width: 30px;
+  height: 2px;
+  background-color: #918aff;
+  display: block;
+  position: relative;
+}
+
+.custom-toggler-icon::before,
+.custom-toggler-icon::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #918aff;
+  position: absolute;
+  left: 0;
+  transition: 0.3s;
+}
+
+.custom-toggler-icon::before {
+  top: -8px;
+}
+
+.custom-toggler-icon::after {
+  top: 8px;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* About Section Styling */
+.about {  
+  background-color: #1422418c; /* Dark background for the section */  
+  color: #e6eeff;
+}
+.about h2 {  
+  font-size: 2.5rem;  
+  color: #ffffff;
+}
+.about .lead {  
+  font-size: 1.25rem;
+}
+.about img {  
+  width: 100%;  
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* Features Section Styling */
+.features {
+  background-color: #1422418c; /* Dark background for the section */
+  color: #e6eeff;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.feature-card {
+  backdrop-filter: blur(25px) saturate(200%);
+  -webkit-backdrop-filter: blur(25px) saturate(200%);
+  background-color: rgba(19, 19, 21, 0.75);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  color: rgb(39, 87, 218);
+}
+
+.feature-card p {
+  font-size: 1rem;
+}
+
+
+/* Newest Projects Section Styling */
+.newest-projects {
+  background-color: #1422418c; /* Slightly lighter dark background */
+  color: #e6eeff;
+}
+.newest-projects h2 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.project-card {
+  backdrop-filter: blur(25px) saturate(200%);
+  -webkit-backdrop-filter: blur(25px) saturate(200%);
+  background-color: rgba(19, 19, 21, 0.75);
+  border-radius: 8px;
+  color: #e6eeff;
+}
+.project-card h3 {
+  font-size: 1.5rem;
+}
+.project-card p {
+  font-size: 1rem;
+}
+.project-card .btn {
+  background-color: rgb(16 28 53);;
+  color: #ffffff;
+  font-weight: bold;
+}
+.project-card .btn:hover {
+  background-color: rgb(21, 45, 110);
+}
+.newest-projects .btn-secondary {
+  background-color:  rgb(15 21 36);
+  color: #ffffff;
+  font-weight: bold;
+}
+.newest-projects .btn-secondary:hover {
+  background-color: #7d6ccf;
+}
+
+/* Testimonials Section Styling */
+.testimonials {
+  background-color: #1422418c;
+  color: #e6eeff;
+}
+.carousel-inner{
+  display: flex;
+  align-items: center;
+}
+.testimonials h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.testimonial-card {
+  backdrop-filter: blur(25px) saturate(200%);
+  -webkit-backdrop-filter: blur(25px) saturate(200%);
+  background-color: rgba(19, 19, 21, 0.75);
+  border-radius: 0.5rem;
+  height: 10em;
+}
+.testimonial-card p {
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.testimonial-card footer {
+  font-size: 1rem;
+  color: rgb(39, 87, 218);
+}
+
+/* Call to Action Section Styling */
+.cta {
+  background-color: #1e213f; /* Slightly lighter dark background */
+  color: #e6eeff;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.cta p {
+  font-size: 1.25rem;
+}
+
+.cta .btn {
+  background-color: #101c35;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.cta .btn:hover {
+  background-color: #7d6ccf;
+}
+
+/* Footer Styling */
+.footer {
+  color: #e6eeff;
+}
+.footer p {
+  margin-bottom: 0;
+}
+.footer ul {
+  padding: 0;
+  list-style: none;
+}
+.footer ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+.footer a {
+  color: #918aff;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+

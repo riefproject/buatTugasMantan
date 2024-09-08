@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .swap-btn {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">Unit Converter</h1>
+      <div class="row mt-4">
+        <div class="col-md-5">
+          <label for="inputValue" class="form-label">Input Value</label>
+          <input
+            type="number"
+            id="inputValue"
+            class="form-control"
+            placeholder="Enter value"
+          />
+          <label for="inputUnit" class="form-label mt-3">Input Unit</label>
+          <select id="inputUnit" class="form-select">
+            <option value="meter">Meter</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="centimeter">Centimeter</option>
+            <option value="millimeter">Millimeter</option>
+          </select>
+        </div>
+        <div class="col-md-2 d-flex align-items-center justify-content-center">
+          <button id="swapBtn" class="btn btn-primary swap-btn">Swap</button>
+        </div>
+        <div class="col-md-5">
+          <label for="outputValue" class="form-label">Output Value</label>
+          <input type="text" id="outputValue" class="form-control" readonly />
+          <label for="outputUnit" class="form-label mt-3">Output Unit</label>
+          <select id="outputUnit" class="form-select">
+            <option value="meter">Meter</option>
+            <option value="kilometer">Kilometer</option>
+            <option value="centimeter">Centimeter</option>
+            <option value="millimeter">Millimeter</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/conversionTool.js"></script>
+  </body>
+</html>
